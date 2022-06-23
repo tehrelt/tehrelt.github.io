@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    
+}
+
+.border {
+    border: 1px solid #737FBF;
+}
+
+:root {
+    --color-primary: #737FBF;
+    --color-accent: #DCE0F4;
+    --color-background: #090A0F;
+    --color-whatever: #181B29;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-primary);
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    padding: 1rem 0;
+    margin-bottom: 50px;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin: 0px 2em;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+}
+
+.glowing {
+    box-shadow: 0px 0px 5px #DCE0F4;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4em;
+}
+
+.flex {
+    display: flex;
+}
+
+.centered-flex {
+    align-items: center;
+    justify-content: center;
+}
+
+main .grid section ul{
+    list-style-position: inside;
+}
+
+main .grid section ul li::before {
+    content: '- ';
+}
+
+main .about {
+    margin-bottom: 1em;
+}
+
+main .about__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .social-box ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .social-box ul li {
+    padding: 0px 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+a:hover:visited {
+    color: var(--color-accent);
+}
+
+a:visited {
+    color: var(--color-primary);
+}
+.wrapper {
+    width: 70%;
+}
+
+.toggleButton{
+    position: fixed;
+    bottom: 0;
+}
