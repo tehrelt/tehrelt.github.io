@@ -152,6 +152,7 @@ footer .social-box ul li {
 
 a {
     text-decoration: none;
+    color: var(--color-primary);
 }
 
 a:hover {
@@ -163,6 +164,7 @@ a:hover:visited {
 }
 
 a:visited {
+    text-decoration: none;
     color: var(--color-primary);
 }
 .wrapper {
